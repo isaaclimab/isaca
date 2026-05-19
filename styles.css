@@ -1,1 +1,52 @@
+ {
+  margin-bottom: 30px;
+}
 
+.info-item {
+  margin-bottom: 25px;
+}
+
+.info-item p {
+  color: #555;
+  margin-top: 5px;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer h3 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #999;
+  margin-bottom: 20px;
+}
+
+footer span {
+  color: #ffcc70;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .title h2,
+  .about h2 {
+    font-size: 38px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
