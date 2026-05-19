@@ -1,18 +1,22 @@
-javascript
-function scrollToMenu() {
-  document.getElementById('menu').scrollIntoView({
-    behavior: 'smooth'
-  });
-}
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
 
-const cards = document.querySelectorAll('.card');
+menuBtn.addEventListener("click", () => {
 
-cards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    card.style.transform = 'translateY(-10px)';
-  });
+  menu.classList.toggle("hidden");
 
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'translateY(0px)';
-  });
+  if(menu.classList.contains("hidden")) {
+
+    menuBtn.innerText = "Ver Cardápio";
+
+  } else {
+
+    menuBtn.innerText = "Fechar Cardápio";
+
+    menu.scrollIntoView({
+      behavior: "smooth"
+    });
+
+  }
+
 });
