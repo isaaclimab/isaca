@@ -3,30 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Bella Massa</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <section class="about">
+  <header class="hero">
+
+    <nav>
+      <h2>Bella Massa</h2>
+
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+
+      <p class="tag">
+        PADARIA • CAFETERIA • CONFEITARIA
+      </p>
+
+      <h1>
+        O sabor da padaria <br>
+        do seu bairro.
+      </h1>
+
+      <p class="description">
+        Pães frescos, doces artesanais e café especial
+        em Guarulhos.
+      </p>
+
+      <button id="menuBtn" class="btn">
+        Ver Cardápio
+      </button>
+
+    </div>
+
+  </header>
+
+  <section class="menu hidden" id="menu">
+
+    <div class="title">
+      <p>CARDÁPIO</p>
+      <h2>Nossos Destaques</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop">
+        <h3>Pão Francês</h3>
+        <p>Crocante por fora e macio por dentro.</p>
+        <span>R$ 1,20</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=1200&auto=format&fit=crop">
+        <h3>Café Especial</h3>
+        <p>Café premium feito na hora.</p>
+        <span>R$ 6,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
+        <h3>Sonho Cremoso</h3>
+        <p>Massa leve recheada com creme.</p>
+        <span>R$ 8,50</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=1200&auto=format&fit=crop">
+        <h3>Pão de Queijo</h3>
+        <p>Quentinho e recheado de sabor.</p>
+        <span>R$ 4,50</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1200&auto=format&fit=crop">
+        <h3>Croissant</h3>
+        <p>Massa folhada amanteigada.</p>
+        <span>R$ 9,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=1200&auto=format&fit=crop">
+        <h3>Bolo de Chocolate</h3>
+        <p>Fatia cremosa com cobertura.</p>
+        <span>R$ 12,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop">
+        <h3>Misto Quente</h3>
+        <p>Pão tostado com queijo e presunto.</p>
+        <span>R$ 10,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?q=80&w=1200&auto=format&fit=crop">
+        <h3>Torta de Frango</h3>
+        <p>Recheio cremoso e massa leve.</p>
+        <span>R$ 13,50</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop">
+        <h3>Capuccino</h3>
+        <p>Cremoso e intenso.</p>
+        <span>R$ 9,50</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1200&auto=format&fit=crop">
+        <h3>Donut</h3>
+        <p>Cobertura doce e massa fofinha.</p>
+        <span>R$ 7,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?q=80&w=1200&auto=format&fit=crop">
+        <h3>Pudim</h3>
+        <p>Tradicional com calda caramelizada.</p>
+        <span>R$ 8,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?q=80&w=1200&auto=format&fit=crop">
+        <h3>Suco Natural</h3>
+        <p>Laranja, morango ou maracujá.</p>
+        <span>R$ 8,50</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=1200&auto=format&fit=crop">
+        <h3>Esfiha</h3>
+        <p>Carne temperada artesanal.</p>
+        <span>R$ 6,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1528736235302-52922df5c122?q=80&w=1200&auto=format&fit=crop">
+        <h3>Empada</h3>
+        <p>Frango cremoso e massa amanteigada.</p>
+        <span>R$ 7,50</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop">
+        <h3>Brigadeiro Gourmet</h3>
+        <p>Chocolate belga artesanal.</p>
+        <span>R$ 5,00</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about" id="sobre">
+
     <div class="about-text">
-      <p class="mini-title">SOBRE NÓS</p>
-      <h2>Tradição e sabor em cada detalhe</h2>
+
+      <p class="mini-title">
+        SOBRE NÓS
+      </p>
+
+      <h2>
+        Tradição e sabor <br>
+        em Guarulhos
+      </h2>
 
       <p>
-        Há mais de 15 anos trazendo receitas artesanais,
-        ambiente aconchegante e atendimento de qualidade.
+        Há mais de 15 anos oferecendo produtos frescos,
+        ambiente aconchegante e atendimento familiar.
       </p>
+
     </div>
 
     <div class="info-box">
+
       <h3>Informações</h3>
 
       <div class="info-item">
         <strong>📍 Endereço</strong>
-        <p>Rua das Flores, 120 - Centro</p>
+        <p>Rua das Flores, 120 - Guarulhos</p>
       </div>
 
       <div class="info-item">
@@ -38,14 +201,23 @@
         <strong>📞 Contato</strong>
         <p>(11) 99999-9999</p>
       </div>
+
     </div>
+
   </section>
 
-  <footer>
-    <h3>Bella Massa</h3>
-    <p>Padaria artesanal & cafeteria premium.</p>
+  <footer id="contato">
 
-    <span>Desenvolvido por Isaac Dev Studio</span>
+    <h3>Bella Massa</h3>
+
+    <p>
+      Padaria artesanal & cafeteria premium.
+    </p>
+
+    <span>
+      Desenvolvido por Isaac Dev Studio
+    </span>
+
   </footer>
 
   <script src="script.js"></script>
